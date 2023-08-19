@@ -11,23 +11,27 @@ If you have not installed ROS Noetic, please follow the URL below to do so。
 http://wiki.ros.org/noetic/Installation/Ubuntu
 ```
 We recommend that you install **Desktop-Full**. before installing, make sure that all your software is up to date!
-在这个界面输入以下命令：
-（图片1）
-![Alt](https://img-home.csdnimg.cn/images/20220524100510.png)
 ```bash
 sudo apt update
 sudo apt upgrade
 ```
+在这个界面输入上面的命令：
+
+![Alt](image1.jpg)
+
 当你输入这些命令并完成更新后，你会看到这个：
 （图片2）
 这证明你已经完成了全部的更新
+
 2. Setup the workspace:
 ```bash
 mkdir -p ur5_ws/src && cd ur5_ws
 ```
 你会看到这个界面：
 （图片3）
+
 这证明你已经完成工作区的创建并进入了工作空间，接下来请安装各种依赖。
+
 3. Setup dependencies:
 ```bash
 sudo apt -y install ros-noetic-moveit \
@@ -88,6 +92,7 @@ echo "source devel/setup.bash" >> ~/.bashrc
 当你完成“catkin_make”后，你会看到接下里的界面：
 （图片6）
 如果你是第一次运行“catkin_make”，你会等待一段非常长的时间，但最终都会显示“100%”
+
 11. Install RealSense SDK 2.0
 ```bash 
 #  Do not put this package into the workspace
