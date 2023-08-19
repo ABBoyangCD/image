@@ -15,24 +15,25 @@ We recommend that you install **Desktop-Full**. before installing, make sure tha
 sudo apt update
 sudo apt upgrade
 ```
-在这个界面输入上面的命令：
+Input the above command in this terminal:
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image1.jpg)
 
-当你输入这些命令并完成更新后，你会看到这个：
+When you input these commands and complete the update, you'll see this:
+
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image2.jpg)
 
-这证明你已经完成了全部的更新
+This proves that you have completed the full update
 
 2. Setup the workspace:
 ```bash
 mkdir -p ur5_ws/src && cd ur5_ws
 ```
-你会看到这个界面：
+You'll see this screen:
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image3.jpg)
 
-这证明你已经完成工作区的创建并进入了工作空间，接下来请安装各种依赖。
+This proves that you've finished creating the workspace and are now in the workspace, so install the dependencies!。
 
 3. Setup dependencies:
 ```bash
@@ -46,17 +47,17 @@ If any dependencies are missing at runtime, look up their full names and install
 ```bash
 sudo apt -y install ros-noetic-<package_name>
 ```
-举个例子：
+An example:
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image4.jpg)
 
-因为我已经完成了所有的更新，所以界面显示数字0
+Since I've already done all the updates, the number 0 appears on the screen.
 
-继续完成接下来的操作，完成“git clone”会出现以下界面：
+Continue to complete the next operation, complete the "git clone" will appear in the following screen:
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image5.jpg)
 
-（请注意，上述图片的“git clone”只是一个例子，请不要再终端输入该命令）
+*The "git clone" in the above image is just an example, please do not input this command in the terminal again!*
 
 4.  Source global ros
 ```bash
@@ -95,11 +96,11 @@ catkin_make
 # activate the workspace (ie: source it)
 echo "source devel/setup.bash" >> ~/.bashrc
 ```
-当你完成“catkin_make”后，你会看到接下里的界面：
+After you finish "catkin_make", you will see the following screen:
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image6.jpg)
 
-如果你是第一次运行“catkin_make”，你会等待一段非常长的时间，但最终都会显示“100%”
+If you are running "catkin_make" for the first time, you will have to wait for a very long time, but eventually it will say "100%".
 
 11. Install RealSense SDK 2.0
 ```bash 
@@ -108,21 +109,21 @@ git clone https://github.com/IntelRealSense/librealsense.git
 # Follow this webpage for detailed installation:
 https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide
 ```
-12. 测试自己的ROS
-你可以运行命令来测试自己的ROS：
+12. Testing your own ROS
+You can run commands to test your own ROS:
 ```bash 
 roscore
 rosrun turtlesim turtlesim_node
 rosrun turtlesim turtle_teleop_key
 ```
-（请注意，请务必在三个终端运行这三个命令！！）
+*Please note, be sure to run all three commands in all three terminals!*
 
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image7.jpg)
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image8.jpg)
 ![Alt](https://github.com/ABBoyangCD/image/blob/main/image9.jpg)
 
-在第三个界面可以控制小乌龟的前进方向。
+In the third screen you can control the direction of the little turtle.
 
-上图，我先控制小乌龟前进，再控制它向左。
+In the picture above, I control the turtle to go forward first, and then control it to go left.
 
-至此，你已经完成了全部的安装！
+At this point, you have completed all the installation!
